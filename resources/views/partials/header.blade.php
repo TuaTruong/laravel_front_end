@@ -9,11 +9,6 @@
         padding: 0px;
     }
 
-    .style-button {
-        padding: 8px 16px;
-        border-color: #f33a2f !important;
-        color: #f33a2f !important;
-    }
 
     .dropdown-menu {
         border: none;
@@ -43,128 +38,127 @@
         }
     }
 </style>
-
-<header class="main-header position-relative z-50" style="color:#585656;">
-    <div class="d-none d-lg-flex align-items-center justify-content-center text-center p-2 text-white"
-        style="background-color: #f33a2f">
-        <div>
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                </path>
-            </svg>
-        </div>
-        <div class="ml-1">
-            Let's go to Europe! Tickets are now available for <a href="https://laracon.eu"
-                class="underline text-white">Laracon EU</a>.
-        </div>
-    </div>
-
-
-    <div class="mx-auto py-4 py-lg-6 bg-white" style="max-width: 1536px; width:100%;">
-        <div class="mx-auto px-2 px-sm-5 d-flex align-items-center justify-content-between" style="max-width:1280px;">
+<div class="position-absolute" style="top:0px;width:100%;z-index:1;">
+    <header class="main-header position-relative" style="color:#585656;background-color: transparent;">
+        <div class="d-none d-lg-flex align-items-center justify-content-center text-center p-2 text-white"
+            style="background-color: #f33a2f">
             <div>
-                <a href="/" class="d-inline-flex align-items-center">
-                    <img src="{{ asset('img/logomark.svg') }}" alt="" width="48" height="50">
-                    <img class="ms-3 d-sm-block" src="{{ asset('img/logo.svg') }}" width="114" height="29"
-                        alt="">
-                </a>
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                    </path>
+                </svg>
             </div>
+            <div class="ml-1">
+                Let's go to Europe! Tickets are now available for <a href="https://laracon.eu"
+                    class="underline text-white">Laracon EU</a>.
+            </div>
+        </div>
 
-            <ul class="position-relative d-none d-lg-flex align-items-center justify-content-center gap-4 gap-xl-5">
-                <li><a href="https://forge.laravel.com" style="color: inherit">Forge</a>
-                </li>
-                <li><a href="https://vapor.laravel.com" style="color: inherit">Vapor</a>
-                </li>
-                <li class="position-relative">
-                    <button class="d-flex align-items-center justify-content-center bg-white" style="border: none;"
-                        data-bs-toggle="dropdown"="">
-                        Ecosystem
-                        <span class="ms-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </span>
+
+        <div class="mx-auto py-4 py-lg-6" style="max-width: 1536px; width:100%;">
+            <div class="mx-auto px-2 px-sm-5 d-flex align-items-center justify-content-between" style="max-width:1280px;">
+                <div>
+                    <a href="/" class="d-inline-flex align-items-center">
+                        <img src="{{ asset('img/logomark.svg') }}" alt="" width="48" height="50">
+                        <img class="ms-3 d-sm-block" src="{{ asset('img/logo.svg') }}" width="114" height="29"
+                            alt="">
+                    </a>
+                </div>
+
+                <ul class="position-relative d-none d-lg-flex align-items-center justify-content-center gap-4 gap-xl-5">
+                    <li><a href="https://forge.laravel.com" style="color: inherit">Forge</a>
+                    </li>
+                    <li><a href="https://vapor.laravel.com" style="color: inherit">Vapor</a>
+                    </li>
+                    <li class="position-relative">
+                        <button class="d-flex align-items-center justify-content-center bg-white" style="border: none;"
+                            data-bs-toggle="dropdown"="">
+                            Ecosystem
+                            <span class="ms-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <div class="position-absolute z-2 dropdown-menu" style="">
+                            <div class="shadow-lg" style="width: 56rem; padding:15px">
+                                <ul class="row row-cols-3" style="padding:0px 5px;">
+                                    @for ($i = 0; $i < 15; $i++)
+                                        <li class="col py-4">
+                                            <a href="https://laravel.com/docs/10.x/starter-kits#laravel-breeze"
+                                                class="d-flex text-decoration-none gap-2">
+                                                <div class="position-relative d-flex align-items-center justify-content-center"
+                                                    style="width: 3rem;height:3rem;flex-shrink:0">
+                                                    <span class="position-absolute"
+                                                        style="width: 100%; height:100%; background-color:#f5cc6a;border-radius: 0.5rem;"></span>
+                                                    <img src="https://laravel.com/img/ecosystem/breeze.min.svg"
+                                                        alt="" width="28" height="28" style="z-index: 1;">
+                                                </div>
+                                                <div>
+                                                    <div style="color:#585656;">Breeze</div>
+                                                    <span
+                                                        style="font-size: .75rem; line-height:1rem; color:rgb(138,136,136)">Lightweight
+                                                        starter kit scaffolding for new applications with Blade or
+                                                        Inertia.</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    @endfor
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="https://laravel-news.com"  style="color: inherit">News</a>
+                    </li>
+                    <li><a href="https://partners.laravel.com"
+                            style="color: inherit">Partners</a></li>
+                    <li><a href="https://laravel.bigcartel.com/"
+                            style="color: inherit">Shop</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center justify-content-end">
+                    <button id="docsearch" class="bg-white" style="border: none;" type="button" class="btn btn-primary"
+                        data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"
+                            style="padding: 1px">
+                            <path
+                                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
                     </button>
 
-                    <div class="position-absolute z-2 dropdown-menu" style="">
-                        <div class="shadow-lg" style="width: 56rem; padding:15px">
-                            <ul class="row row-cols-3" style="padding:0px 5px;">
-                                @for ($i = 0; $i < 15; $i++)
-                                    <li class="col py-4">
-                                        <a href="https://laravel.com/docs/10.x/starter-kits#laravel-breeze"
-                                            class="d-flex text-decoration-none gap-2">
-                                            <div class="position-relative d-flex align-items-center justify-content-center"
-                                                style="width: 3rem;height:3rem;flex-shrink:0">
-                                                <span class="position-absolute"
-                                                    style="width: 100%; height:100%; background-color:#f5cc6a;border-radius: 0.5rem;"></span>
-                                                <img src="https://laravel.com/img/ecosystem/breeze.min.svg"
-                                                    alt="" width="28" height="28" style="z-index: 1;">
-                                            </div>
-                                            <div>
-                                                <div style="color:#585656;">Breeze</div>
-                                                <span
-                                                    style="font-size: .75rem; line-height:1rem; color:rgb(138,136,136)">Lightweight
-                                                    starter kit scaffolding for new applications with Blade or
-                                                    Inertia.</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                @endfor
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="https://laravel-news.com"  style="color: inherit">News</a>
-                </li>
-                <li><a href="https://partners.laravel.com"
-                        style="color: inherit">Partners</a></li>
-                <li><a href="https://laravel.bigcartel.com/"
-                        style="color: inherit">Shop</a></li>
-            </ul>
+                    <a href="https://laravel.com/docs/10.x"
+                        class="d-none d-lg-inline-flex ms-3 style-button" >
+                        <span
+                            class="text-center fw-bold bg-white border" style="padding: 8px 16px;">
+                            Documentation
+                        </span>
+                    </a>
 
-            <div class="d-flex align-items-center justify-content-end">
-                <button id="docsearch" class="bg-white" style="border: none;" type="button" class="btn btn-primary"
-                    data-bs-toggle="modal" data-bs-target="#myModal">
-                    <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"
-                        style="padding: 1px">
-                        <path
-                            d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
-                            stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
-                    </svg>
-                </button>
-
-                <a href="https://laravel.com/docs/10.x"
-                    class="position-relative d-none d-lg-inline-flex ms-3 text-decoration-none" style="color:inherit">
-                    <span
-                        class="d-inline-flex align-items-center justify-content-center align-self-stretch text-center fw-bold bg-white border style-button">
-                        Documentation
-                    </span>
-                </a>
-
-                <button class="bg-white ms-2 d-inline-flex d-lg-none align-items-center justify-content-center"
-                    style="border:none; width:40px; height:40px; padding:8px;">
-                    <svg x-show="! navIsOpen" class="w-6" viewBox="0 0 28 12" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" style="">
-                        <line y1="1" x2="28" y2="1" stroke="currentColor" stroke-width="2">
-                        </line>
-                        <line y1="11" x2="28" y2="11" stroke="currentColor" stroke-width="2">
-                        </line>
-                    </svg>
-                </button>
+                    <button class="bg-white ms-2 d-inline-flex d-lg-none align-items-center justify-content-center"
+                        style="border:none; width:40px; height:40px; padding:8px;">
+                        <svg x-show="! navIsOpen" class="w-6" viewBox="0 0 28 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" style="">
+                            <line y1="1" x2="28" y2="1" stroke="currentColor" stroke-width="2">
+                            </line>
+                            <line y1="11" x2="28" y2="11" stroke="currentColor" stroke-width="2">
+                            </line>
+                        </svg>
+                    </button>
+                </div>
             </div>
-
-
         </div>
-    </div>
-</header>
+    </header>
+</div>
 
-<div class="modal fade" id="myModal">
+<div class="modal fade" id="searchModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

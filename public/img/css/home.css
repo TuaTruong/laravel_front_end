@@ -1,0 +1,175 @@
+.block1 {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+}
+
+.gradiant-color {
+    display: inline-flex;
+    position: absolute;
+    background-image: radial-gradient(50% 50% at 50% 50%, #EB4432 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.15;
+    width: 640px;
+    height: 640px;
+    left: -20%;
+    top: -6rem;
+    pointer-events: none;
+}
+
+.main-heading {
+    font-size: 3.5rem;
+}
+
+.main-description,
+.main-button-wrapper{
+    margin-top: 1.5rem;
+}
+
+.main-description {
+
+    max-width: 36rem;
+    line-height: 1.625;
+    font-size: 20px;
+}
+
+.first-box {
+    left: 0.5rem;
+}
+
+.second-box {
+    right: 1rem;
+}
+
+.third-box {
+    right: 1.5rem;
+    bottom: 0px;
+}
+
+.style-button{
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.style-button > span{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #f33a2f !important;
+    color: #f33a2f !important;
+}
+
+.main-button-wrapper{
+    max-width: 640px!important;
+}
+
+.main-button-wrapper a{
+    width: auto;
+}
+
+.main-button-wrapper a.first-button{
+    border: 1px solid rgb(235,68,50);
+}
+.main-button-wrapper a.first-button > span{
+    width: 100%;
+    color: white !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgb(235,68,50);
+    background-color: rgb(235,68,50);
+}
+
+.main-button-wrapper span{
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.block1,
+.block2,
+.block3,
+.block4{
+    overflow: hidden;
+}
+
+@media (max-width:640px) {
+    .main-button-wrapper a{
+        width: 100%!important;
+    }
+
+    .block2,
+    .block3,
+    .block4{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+@media (min-width:640px) {
+    .joy-description{
+        max-width: 480px;
+    }
+}
+@media (min-width: 768px){
+    .main-heading {
+        font-size: 3.75rem;
+    }
+
+    .brand-using{
+       overflow: hidden;
+       margin-top: 6rem;
+    }
+    .main-button-wrapper,
+    .main-description {
+        margin-top: 2rem;
+    }
+
+    .block2,.block3{
+        padding-top: 6rem;
+    }
+
+    .block4{
+        padding-top: 12rem;
+    }
+
+    .amazing-heading{
+        font-size: 60px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .main-heading {
+        font-size: 4.5rem;
+    }
+
+
+    .first-box {
+        left: 12%;
+    }
+
+    .second-box {
+        right: 15%;
+    }
+
+    .block2,.block3{
+        padding-top: 16rem;
+    }
+}
+
+@media (min-width:1280px){
+    .block1 {
+        padding-top: 14rem;
+        padding-bottom: 7rem;
+    }
+
+    .joy-wrapper, .flavor-wrapper {
+        padding: 0px 1.25rem;
+    }
+}
