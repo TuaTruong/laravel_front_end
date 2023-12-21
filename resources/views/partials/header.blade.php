@@ -58,7 +58,7 @@
 
 
         <div class="mx-auto py-4 py-lg-6" style="max-width: 1536px; width:100%;">
-            <div class="mx-auto px-2 px-sm-5 d-flex align-items-center justify-content-between" style="max-width:1280px;">
+            <div class="container mx-auto d-flex align-items-center justify-content-between" style="max-width:1280px;">
                 <div>
                     <a href="/" class="d-inline-flex align-items-center">
                         <img src="{{ asset('img/logomark.svg') }}" alt="" width="48" height="50">
