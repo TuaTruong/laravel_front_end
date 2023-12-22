@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<div class="container-fluid show multi-collapse collapse d-lg-block">
     <div class="block1 position-relative mx-auto">
         <span class="gradiant-color d-none d-lg-block"></span>
         <div class="mx-auto position-relative" style="max-width:1280px; padding:0px 3rem;">
@@ -710,7 +711,7 @@
         </div>
     </div>
 
-    <div class="block8 position-relative container" style="overflow: hidden;padding-top: 4rem; padding-bottom:4rem;">
+    <div class="block9 position-relative container" style="overflow: hidden;padding-top: 4rem; padding-bottom:4rem;">
         <div class="partner-wrapper position-relative mx-auto">
             <div class="row row-cols-1 row-cols-lg-2 g-5">
                 <div class="col order-lg-2 d-flex justify-content-center align-items-center">
@@ -734,4 +735,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection

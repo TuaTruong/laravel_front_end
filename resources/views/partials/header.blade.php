@@ -1,8 +1,9 @@
 <style>
-    a{
+    a {
         text-decoration: none;
         color: #585656;
     }
+
     ul {
         list-style-type: none;
         margin: 0px;
@@ -98,7 +99,8 @@
                                                     <span class="position-absolute"
                                                         style="width: 100%; height:100%; background-color:#f5cc6a;border-radius: 0.5rem;"></span>
                                                     <img src="https://laravel.com/img/ecosystem/breeze.min.svg"
-                                                        alt="" width="28" height="28" style="z-index: 1;">
+                                                        alt="" width="28" height="28"
+                                                        style="z-index: 1;">
                                                 </div>
                                                 <div>
                                                     <div style="color:#585656;">Breeze</div>
@@ -114,12 +116,10 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="https://laravel-news.com"  style="color: inherit">News</a>
+                    <li><a href="https://laravel-news.com" style="color: inherit">News</a>
                     </li>
-                    <li><a href="https://partners.laravel.com"
-                            style="color: inherit">Partners</a></li>
-                    <li><a href="https://laravel.bigcartel.com/"
-                            style="color: inherit">Shop</a></li>
+                    <li><a href="https://partners.laravel.com" style="color: inherit">Partners</a></li>
+                    <li><a href="https://laravel.bigcartel.com/" style="color: inherit">Shop</a></li>
                 </ul>
 
                 <div class="d-flex align-items-center justify-content-end">
@@ -134,21 +134,22 @@
                         </svg>
                     </button>
 
-                    <a href="https://laravel.com/docs/10.x"
-                        class="d-none d-lg-inline-flex ms-3 style-button" >
-                        <span
-                            class="text-center fw-bold bg-white border" style="padding: 8px 16px;">
+                    <a href="https://laravel.com/docs/10.x" class="d-none d-lg-inline-flex ms-3 style-button">
+                        <span class="text-center fw-bold bg-white border" style="padding: 8px 16px;">
                             Documentation
                         </span>
                     </a>
 
                     <button class="bg-white ms-2 d-inline-flex d-lg-none align-items-center justify-content-center"
-                        style="border:none; width:40px; height:40px; padding:8px;">
+                        style="border:none; width:40px; height:40px; padding:8px;" data-bs-toggle="collapse"
+                        data-bs-target=".multi-collapse">
                         <svg x-show="! navIsOpen" class="w-6" viewBox="0 0 28 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg" style="">
-                            <line y1="1" x2="28" y2="1" stroke="currentColor" stroke-width="2">
+                            <line y1="1" x2="28" y2="1" stroke="currentColor"
+                                stroke-width="2">
                             </line>
-                            <line y1="11" x2="28" y2="11" stroke="currentColor" stroke-width="2">
+                            <line y1="11" x2="28" y2="11" stroke="currentColor"
+                                stroke-width="2">
                             </line>
                         </svg>
                     </button>
@@ -222,7 +223,7 @@
                     </li>
                 </ul>
                 <div class="d-inline-block" style="margin-left: auto;">
-                    <a href="#" >
+                    <a href="#">
                         <span>Search by</span>
                         <svg width="77" height="19" aria-label="Algolia" role="img" id="Layer_1"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2196.2 500">
@@ -271,3 +272,25 @@
         </div>
     </div>
 </div>
+
+<nav class="position-fixed container-fluid collapse multi-collapse d-lg-none" style=";padding-top:4.2rem;">
+    <div class="bg-white" style="overflow-y: auto;height:100%;padding-top:2rem;padding-bottom:2rem">
+        <ul>
+            <li><a class="d-block container-fluid" style="padding: 0.5rem 0px;" href="javascript:void(0)">Forge</a>
+            </li>
+            <li><a class="d-block container-fluid" style="padding: 0.5rem 0px;" href="javascript:void(0)">Vapor</a>
+            </li>
+            <li><a class="d-block container-fluid" style="padding: 0.5rem 0px;" href="javascript:void(0)">News</a>
+            </li>
+            <li><a class="d-block container-fluid" style="padding: 0.5rem 0px;"
+                    href="javascript:void(0)">Partners</a></li>
+            <li><a class="d-block container-fluid" style="padding: 0.5rem 0px;" href="javascript:void(0)">Shop</a>
+            </li>
+            <li class="">
+                <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center container-fluid style-button mt-4 mx-auto">
+                    <span style="padding: 8px 40px;">Documentation</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

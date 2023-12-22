@@ -1,4 +1,4 @@
-<footer class="position-relative" style="padding-top: 3rem">
+<footer class="position-relative show multi-collapse collapse d-lg-block" style="padding-top: 3rem">
     <div class="container mx-auto" style="max-width:1536px; height:300px">
         <div>
             <a href="/" class="d-inline-flex">
